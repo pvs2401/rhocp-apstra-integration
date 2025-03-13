@@ -1,3 +1,24 @@
+---
+title: "Build a Demo of Integration of RHOCP and Apstra using RH Ansible Event-Driven Automation"
+author: "Guy Davies"
+date: "2025-02-11"
+toc: true
+include-before:
+  - '`\newpage{}`{=latex}'
+lof: true
+mainfont: "Lato"
+sansfont: "Arial"
+monofont: "Courier New"
+monofontoptions:
+  - "Scale=0.8"
+fontsize: 12pt
+header-includes:
+  - \usepackage[document]{ragged2e}
+  - \exhyphenpenalty=10000 \hyphenpenalty=10000
+---
+
+$\pagebreak$
+
 # Build a Demo of Integration of RHOCP and Apstra using RH Ansible Event-Driven Automation
 
 ## Introduction
@@ -50,6 +71,8 @@ To build the demo, you will need the following:
 - At least two Juniper QFX leaf switches (QFX5120 or QFX5130)
 - At least one Juniper QFX spine switch (QFX5210 or QFX5220)
 
+![High Level Overview of an Example Demo Layout](Diagrams/SVG/High_Level_Overview.svg "High Level Overview of an Example Demo Layout")
+
 Deploy the IP Fabric using Apstra with a simple 3-stage Clos topology with the
 QFX switches as the leaf and spine switches.  A default blueprint should be
 fine with one spine and two leaves.
@@ -73,6 +96,10 @@ the demo.
 ## Demo Steps
 
 **NOTE: All the excerpts shown in this README are available in the <repo-base>/Artifacts folder of this repository**
+
+The following demo builds the setup as shown in the diagram below.
+
+![Demo Setup](Diagrams/SVG/Connectivity.svg "Diagram of the Demo Setup")
 
 ### Step 1: Create SRIOV Network Node Policies
 
